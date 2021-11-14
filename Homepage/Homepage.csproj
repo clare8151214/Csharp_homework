@@ -34,7 +34,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,6 +78,18 @@
     <Compile Include="ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentsGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsGrade.Designer.cs">
+      <DependentUpon>StudentsGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsGrade_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsGrade_List.Designer.cs">
+      <DependentUpon>StudentsGrade_List.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student_StructForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,9 +117,16 @@
     <EmbeddedResource Include="ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentsGrade.resx">
+      <DependentUpon>StudentsGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsGrade_List.resx">
+      <DependentUpon>StudentsGrade_List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student_StructForm.resx">
       <DependentUpon>Student_StructForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
