@@ -64,6 +64,12 @@
     <Compile Include="LoanForm.Designer.cs">
       <DependentUpon>LoanForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Method.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Method.Designer.cs">
+      <DependentUpon>Method.cs</DependentUpon>
+    </Compile>
     <Compile Include="PosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoanForm.resx">
       <DependentUpon>LoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Method.resx">
+      <DependentUpon>Method.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PosForm.resx">
       <DependentUpon>PosForm.cs</DependentUpon>

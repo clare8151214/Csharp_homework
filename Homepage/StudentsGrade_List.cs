@@ -165,6 +165,7 @@ namespace Homepage
         private void btnReset_Click(object sender, EventArgs e)
         {
             thelist = "";
+            labelAll.Text = "";
             if (name.Count == 0)
                 MessageBox.Show("沒東西");
             else
