@@ -70,6 +70,12 @@
     <Compile Include="Method.Designer.cs">
       <DependentUpon>Method.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyClac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyClac.Designer.cs">
+      <DependentUpon>MyClac.cs</DependentUpon>
+    </Compile>
     <Compile Include="PosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Method.resx">
       <DependentUpon>Method.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyClac.resx">
+      <DependentUpon>MyClac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PosForm.resx">
       <DependentUpon>PosForm.cs</DependentUpon>

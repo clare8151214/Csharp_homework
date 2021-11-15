@@ -23,11 +23,12 @@ namespace Homepage
 
         private void btnOE_Click(object sender, EventArgs e)
         {
-            if (txtNumber.Text == "")
+            int n;
+            bool a = int.TryParse(txtNumber.Text,out n);
+            if (a == false)
                 MessageBox.Show("請輸入數值");
             else
-            {
-                int n = Convert.ToInt32(txtNumber.Text);
+            {               
                 if (n % 2 == 0)
                     labelResult.Text = "輸入的數 " + n + "為 偶數";
                 else
