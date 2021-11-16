@@ -66,5 +66,10 @@ namespace Homepage
             else
                 txtAnswer.Text = (n1 / n2).ToString();
         }
+
+        private void txtN1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
