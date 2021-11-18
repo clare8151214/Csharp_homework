@@ -114,6 +114,12 @@
     <Compile Include="Student_StructForm.Designer.cs">
       <DependentUpon>Student_StructForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="XOGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOGame.Designer.cs">
+      <DependentUpon>XOGame.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ForDoWhile.resx">
       <DependentUpon>ForDoWhile.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student_StructForm.resx">
       <DependentUpon>Student_StructForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XOGame.resx">
+      <DependentUpon>XOGame.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
