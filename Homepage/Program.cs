@@ -16,7 +16,7 @@ namespace Homepage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new XOGame());
+            Application.Run(new Background());
         }
     }
 }

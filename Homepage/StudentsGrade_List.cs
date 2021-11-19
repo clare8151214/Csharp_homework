@@ -137,10 +137,13 @@ namespace Homepage
         private void btnRemove_Click(object sender, EventArgs e)
         {
             thelist = "";
-            if (name.Count < 1)
+            if (name.Count <= 1)
+            {               
+                btnAll.Enabled = false;
+            }
+            if(name.Count < 1)
             {
                 btnRemove.Enabled = false;
-                btnAll.Enabled = false;
             }
             else
             {
