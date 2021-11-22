@@ -108,5 +108,12 @@ namespace Homepage
             splitContainer2.Panel2.Controls.Add(xogForm);
             xogForm.Show();
         }
+
+        private void btnScreenSaver_Click(object sender, EventArgs e)
+        {
+            splitContainer2.Panel2.Controls.Clear();
+            ScreenSaver ssForm = new ScreenSaver();
+            ssForm.Show();
+        }
     }
 }

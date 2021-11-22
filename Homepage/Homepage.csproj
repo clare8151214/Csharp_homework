@@ -102,6 +102,12 @@
     <Compile Include="ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ScreenSaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenSaver.Designer.cs">
+      <DependentUpon>ScreenSaver.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentsGrade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenSaver.resx">
+      <DependentUpon>ScreenSaver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentsGrade.resx">
       <DependentUpon>StudentsGrade.cs</DependentUpon>
