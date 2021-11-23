@@ -43,6 +43,7 @@
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
             this.btnScreenSaver = new System.Windows.Forms.Button();
+            this.btnNotepad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -96,6 +97,7 @@
             // 
             this.splitContainer2.Panel1.AutoScroll = true;
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
+            this.splitContainer2.Panel1.Controls.Add(this.btnNotepad);
             this.splitContainer2.Panel1.Controls.Add(this.btnScreenSaver);
             this.splitContainer2.Panel1.Controls.Add(this.btnXOGame);
             this.splitContainer2.Panel1.Controls.Add(this.btnForDoWhile);
@@ -263,6 +265,19 @@
             this.btnScreenSaver.UseVisualStyleBackColor = true;
             this.btnScreenSaver.Click += new System.EventHandler(this.btnScreenSaver_Click);
             // 
+            // btnNotepad
+            // 
+            this.btnNotepad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNotepad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNotepad.Location = new System.Drawing.Point(12, 313);
+            this.btnNotepad.Name = "btnNotepad";
+            this.btnNotepad.Size = new System.Drawing.Size(289, 22);
+            this.btnNotepad.TabIndex = 11;
+            this.btnNotepad.Text = "Notepad";
+            this.btnNotepad.UseVisualStyleBackColor = true;
+            this.btnNotepad.Click += new System.EventHandler(this.btnNotepad_Click);
+            // 
             // Background
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -302,5 +317,6 @@
         private System.Windows.Forms.Button btnXOGame;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnScreenSaver;
+        private System.Windows.Forms.Button btnNotepad;
     }
 }

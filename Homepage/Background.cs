@@ -115,5 +115,11 @@ namespace Homepage
             ScreenSaver ssForm = new ScreenSaver();
             ssForm.Show();
         }
+
+        private void btnNotepad_Click(object sender, EventArgs e)
+        {
+            Notepad npForm = new Notepad();
+            npForm.Show();
+        }
     }
 }
