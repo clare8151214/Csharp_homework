@@ -58,12 +58,12 @@ namespace Homepage
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            if(path != "") //檢查是否有開檔案
+            //MessageBox.Show(path);
+            if (path != "") //檢查是否有開檔案
             {
-               // MessageBox.Show(path);
+
                 File.WriteAllText(path, richTextBox1.Text);
             }
-                
             else
             {
                 saveFileDialog1.DefaultExt = ".txt";

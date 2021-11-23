@@ -219,7 +219,8 @@
             // 
             // saveFileDialog1
             // 
-            this.saveFileDialog1.CheckFileExists = true;
+            this.saveFileDialog1.CheckPathExists = false;
+            this.saveFileDialog1.ValidateNames = false;
             // 
             // 另存新檔AToolStripMenuItem
             // 
