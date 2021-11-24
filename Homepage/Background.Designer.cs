@@ -44,6 +44,8 @@
             this.btnHello = new System.Windows.Forms.Button();
             this.btnScreenSaver = new System.Windows.Forms.Button();
             this.btnNotepad = new System.Windows.Forms.Button();
+            this.btnPaint = new System.Windows.Forms.Button();
+            this.btnPictureViewer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -97,6 +99,8 @@
             // 
             this.splitContainer2.Panel1.AutoScroll = true;
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
+            this.splitContainer2.Panel1.Controls.Add(this.btnPictureViewer);
+            this.splitContainer2.Panel1.Controls.Add(this.btnPaint);
             this.splitContainer2.Panel1.Controls.Add(this.btnNotepad);
             this.splitContainer2.Panel1.Controls.Add(this.btnScreenSaver);
             this.splitContainer2.Panel1.Controls.Add(this.btnXOGame);
@@ -278,6 +282,32 @@
             this.btnNotepad.UseVisualStyleBackColor = true;
             this.btnNotepad.Click += new System.EventHandler(this.btnNotepad_Click);
             // 
+            // btnPaint
+            // 
+            this.btnPaint.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPaint.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPaint.Location = new System.Drawing.Point(11, 341);
+            this.btnPaint.Name = "btnPaint";
+            this.btnPaint.Size = new System.Drawing.Size(289, 22);
+            this.btnPaint.TabIndex = 12;
+            this.btnPaint.Text = "小畫家";
+            this.btnPaint.UseVisualStyleBackColor = true;
+            this.btnPaint.Click += new System.EventHandler(this.btnPaint_Click);
+            // 
+            // btnPictureViewer
+            // 
+            this.btnPictureViewer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPictureViewer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPictureViewer.Location = new System.Drawing.Point(11, 369);
+            this.btnPictureViewer.Name = "btnPictureViewer";
+            this.btnPictureViewer.Size = new System.Drawing.Size(289, 22);
+            this.btnPictureViewer.TabIndex = 13;
+            this.btnPictureViewer.Text = "PictureViewer";
+            this.btnPictureViewer.UseVisualStyleBackColor = true;
+            this.btnPictureViewer.Click += new System.EventHandler(this.btnPictureViewer_Click);
+            // 
             // Background
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -318,5 +348,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnScreenSaver;
         private System.Windows.Forms.Button btnNotepad;
+        private System.Windows.Forms.Button btnPaint;
+        private System.Windows.Forms.Button btnPictureViewer;
     }
 }

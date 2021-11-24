@@ -15,8 +15,8 @@ namespace Homepage
     {
 
         int total_price = 0;
-        static int[] number = new int[4];
-        static int[] total = new int[4];
+        int[] number = new int[4];
+        int[] total = new int[4];
         Dictionary<string, int> menu = new Dictionary<string, int>();
         List<string> show = new List<string>();
         public PosForm()

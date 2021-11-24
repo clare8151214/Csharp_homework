@@ -121,5 +121,19 @@ namespace Homepage
             Notepad npForm = new Notepad();
             npForm.Show();
         }
+
+        private void btnPaint_Click(object sender, EventArgs e)
+        {
+            splitContainer2.Panel2.Controls.Clear();
+            DrawPaint drawPaint = new DrawPaint();
+            drawPaint.TopLevel = false;
+            splitContainer2.Panel2.Controls.Add(drawPaint);
+            drawPaint.Show();
+        }
+
+        private void btnPictureViewer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

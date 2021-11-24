@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PosForm));
             this.label1 = new System.Windows.Forms.Label();
             this.btnBeer = new System.Windows.Forms.Button();
             this.btnTequila = new System.Windows.Forms.Button();
@@ -57,17 +58,22 @@
             // 
             // btnBeer
             // 
+            this.btnBeer.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBeer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBeer.BackgroundImage")));
+            this.btnBeer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBeer.Font = new System.Drawing.Font("微軟正黑體", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnBeer.Location = new System.Drawing.Point(36, 69);
             this.btnBeer.Name = "btnBeer";
             this.btnBeer.Size = new System.Drawing.Size(84, 102);
             this.btnBeer.TabIndex = 1;
             this.btnBeer.Text = "啤酒 \r\nBeer \r\nNT$120";
-            this.btnBeer.UseVisualStyleBackColor = true;
+            this.btnBeer.UseVisualStyleBackColor = false;
             this.btnBeer.Click += new System.EventHandler(this.btnBeer_Click);
             // 
             // btnTequila
             // 
+            this.btnTequila.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTequila.BackgroundImage")));
+            this.btnTequila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTequila.Font = new System.Drawing.Font("微軟正黑體", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTequila.Location = new System.Drawing.Point(126, 69);
             this.btnTequila.Name = "btnTequila";
@@ -79,6 +85,8 @@
             // 
             // btnWhisky
             // 
+            this.btnWhisky.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWhisky.BackgroundImage")));
+            this.btnWhisky.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWhisky.Font = new System.Drawing.Font("微軟正黑體", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnWhisky.Location = new System.Drawing.Point(36, 178);
             this.btnWhisky.Name = "btnWhisky";
@@ -90,6 +98,8 @@
             // 
             // btnWine
             // 
+            this.btnWine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWine.BackgroundImage")));
+            this.btnWine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWine.Font = new System.Drawing.Font("微軟正黑體", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnWine.Location = new System.Drawing.Point(126, 178);
             this.btnWine.Name = "btnWine";
