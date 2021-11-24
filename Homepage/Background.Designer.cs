@@ -46,6 +46,7 @@
             this.btnNotepad = new System.Windows.Forms.Button();
             this.btnPaint = new System.Windows.Forms.Button();
             this.btnPictureViewer = new System.Windows.Forms.Button();
+            this.btnGuess = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -99,6 +100,7 @@
             // 
             this.splitContainer2.Panel1.AutoScroll = true;
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
+            this.splitContainer2.Panel1.Controls.Add(this.btnGuess);
             this.splitContainer2.Panel1.Controls.Add(this.btnPictureViewer);
             this.splitContainer2.Panel1.Controls.Add(this.btnPaint);
             this.splitContainer2.Panel1.Controls.Add(this.btnNotepad);
@@ -308,6 +310,19 @@
             this.btnPictureViewer.UseVisualStyleBackColor = true;
             this.btnPictureViewer.Click += new System.EventHandler(this.btnPictureViewer_Click);
             // 
+            // btnGuess
+            // 
+            this.btnGuess.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuess.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuess.Location = new System.Drawing.Point(11, 397);
+            this.btnGuess.Name = "btnGuess";
+            this.btnGuess.Size = new System.Drawing.Size(289, 22);
+            this.btnGuess.TabIndex = 14;
+            this.btnGuess.Text = "Guess";
+            this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
+            // 
             // Background
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -350,5 +365,6 @@
         private System.Windows.Forms.Button btnNotepad;
         private System.Windows.Forms.Button btnPaint;
         private System.Windows.Forms.Button btnPictureViewer;
+        private System.Windows.Forms.Button btnGuess;
     }
 }

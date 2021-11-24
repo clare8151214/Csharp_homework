@@ -133,7 +133,20 @@ namespace Homepage
 
         private void btnPictureViewer_Click(object sender, EventArgs e)
         {
+            splitContainer2.Panel2.Controls.Clear();
+            PictureViewer pictureViewer = new PictureViewer();
+            pictureViewer.TopLevel = false;
+            splitContainer2.Panel2.Controls.Add(pictureViewer);
+            pictureViewer.Show();
+        }
 
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            splitContainer2.Panel2.Controls.Clear();
+            GuessNumber guessNumber = new GuessNumber();
+            guessNumber.TopLevel = false;
+            splitContainer2.Panel2.Controls.Add(guessNumber);
+            guessNumber.Show();
         }
     }
 }
