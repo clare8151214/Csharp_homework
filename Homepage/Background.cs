@@ -118,6 +118,7 @@ namespace Homepage
 
         private void btnNotepad_Click(object sender, EventArgs e)
         {
+            splitContainer2.Panel2.Controls.Clear();
             Notepad npForm = new Notepad();
             npForm.Show();
         }
