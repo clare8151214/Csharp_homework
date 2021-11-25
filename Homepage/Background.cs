@@ -148,5 +148,15 @@ namespace Homepage
             splitContainer2.Panel2.Controls.Add(guessNumber);
             guessNumber.Show();
         }
+
+        private void btnAlarm_Click(object sender, EventArgs e) 
+        {
+            //不知道為甚麼將鬧鐘放在container裡面之後，輸入時間只能用tab鍵
+            splitContainer2.Panel2.Controls.Clear();
+            Alarm alarm = new Alarm();
+            alarm.TopLevel = false;
+            splitContainer2.Panel2.Controls.Add(alarm);
+            alarm.Show();
+        }
     }
 }

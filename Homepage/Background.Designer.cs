@@ -47,6 +47,7 @@
             this.btnPaint = new System.Windows.Forms.Button();
             this.btnPictureViewer = new System.Windows.Forms.Button();
             this.btnGuess = new System.Windows.Forms.Button();
+            this.btnAlarm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -100,6 +101,7 @@
             // 
             this.splitContainer2.Panel1.AutoScroll = true;
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
+            this.splitContainer2.Panel1.Controls.Add(this.btnAlarm);
             this.splitContainer2.Panel1.Controls.Add(this.btnGuess);
             this.splitContainer2.Panel1.Controls.Add(this.btnPictureViewer);
             this.splitContainer2.Panel1.Controls.Add(this.btnPaint);
@@ -323,6 +325,19 @@
             this.btnGuess.UseVisualStyleBackColor = true;
             this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
+            // btnAlarm
+            // 
+            this.btnAlarm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAlarm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAlarm.Location = new System.Drawing.Point(11, 425);
+            this.btnAlarm.Name = "btnAlarm";
+            this.btnAlarm.Size = new System.Drawing.Size(289, 22);
+            this.btnAlarm.TabIndex = 15;
+            this.btnAlarm.Text = "Alarm";
+            this.btnAlarm.UseVisualStyleBackColor = true;
+            this.btnAlarm.Click += new System.EventHandler(this.btnAlarm_Click);
+            // 
             // Background
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -366,5 +381,6 @@
         private System.Windows.Forms.Button btnPaint;
         private System.Windows.Forms.Button btnPictureViewer;
         private System.Windows.Forms.Button btnGuess;
+        private System.Windows.Forms.Button btnAlarm;
     }
 }
