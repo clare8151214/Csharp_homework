@@ -75,7 +75,6 @@
             this.Controls.Add(this.label1);
             this.Name = "GuessNumber";
             this.Text = "Form Guess Number";
-            this.Load += new System.EventHandler(this.GuessNumber_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,6 +22,8 @@ namespace Homepage
         {                       
             Random r = new Random();
             guess.answer = r.Next(1, 101);
+            guess.low = 1;
+            guess.high = 100;
             Class1.gn = this;
             guess.ShowDialog();
            
@@ -32,9 +34,5 @@ namespace Homepage
             MessageBox.Show("Answer : " + guess.answer);
         }
 
-        private void GuessNumber_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
