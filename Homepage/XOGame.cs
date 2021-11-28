@@ -106,5 +106,19 @@ namespace Homepage
         {
             this.Close();
         }
+
+        private void XOGame_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.R)
+            {
+                resetBotton();
+                turn_count = 0;
+                flag = true;
+            }
+            if(e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

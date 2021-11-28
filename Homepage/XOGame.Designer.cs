@@ -209,8 +209,10 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "XOGame";
             this.Text = "XOGame";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.XOGame_KeyDown);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
